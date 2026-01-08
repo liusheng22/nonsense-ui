@@ -1,0 +1,19 @@
+:root {
+  --vp-c-brand: #10b981;
+  --vp-c-brand-light: #34d399;
+  --vp-c-brand-lighter: #6ee7b7;
+  --vp-c-brand-dark: #059669;
+  --vp-c-brand-darker: #047857;
+}
+
+/* Ensure doc card containers look good in dark mode */
+.nsui-card {
+  transition: all 0.3s ease;
+}
+
+/* VitePress Home Layout Adjustments */
+.dark .home-prank-container {
+  background: var(--vp-c-bg-soft) !important;
+  border-color: var(--vp-c-gutter) !important;
+}
+
