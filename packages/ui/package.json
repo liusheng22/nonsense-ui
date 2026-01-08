@@ -1,7 +1,25 @@
 {
   "name": "nonsense-ui",
   "version": "1.0.1",
-  "description": "A nonsense Vue 3 component library designed for laughs.",
+  "description": "全宇宙交互效率最低的组件库。一个专门制造障碍体验的 Vue 3 组件库，专注反人类设计与极致荒诞交互。",
+  "keywords": [
+    "vue",
+    "vue3",
+    "component-library",
+    "nonsense-ui",
+    "anti-human-design",
+    "humor",
+    "ui-kit"
+  ],
+  "homepage": "https://nonsense-ui.lius.me/",
+  "bugs": {
+    "url": "https://github.com/liusheng22/nonsense-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liusheng22/nonsense-ui.git"
+  },
+  "license": "MIT",
   "type": "module",
   "files": [
     "dist"
