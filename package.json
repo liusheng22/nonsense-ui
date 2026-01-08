@@ -1,0 +1,20 @@
+{
+  "name": "nonsense-ui-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev:docs": "pnpm -C apps/docs dev",
+    "build": "pnpm -r build",
+    "preview:docs": "pnpm -C apps/docs preview",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm -r build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.8",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.17",
+    "typescript": "^5.4.5"
+  }
+}
