@@ -1,6 +1,6 @@
 {
   "name": "nonsense-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "全宇宙交互效率最低的组件库。一个专门制造障碍体验的 Vue 3 组件库，专注反人类设计与极致荒诞交互。",
   "keywords": [
     "vue",
