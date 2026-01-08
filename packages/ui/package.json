@@ -1,6 +1,6 @@
 {
   "name": "nonsense-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A nonsense Vue 3 component library designed for laughs.",
   "type": "module",
   "files": [
@@ -34,4 +34,3 @@
     "vue-tsc": "^2.2.0"
   }
 }
-
