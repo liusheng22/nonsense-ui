@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nsui-border: rgba(0, 0, 0, 0.1);
+  --nsui-bg: #ffffff;
+  --nsui-bg-soft: #f8fafc;
+  --nsui-text: #1e293b;
+  --nsui-text-muted: #64748b;
+  --nsui-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  --nsui-radius: 2rem;
+  --nsui-font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* VitePress uses .dark class on <html> or a parent for dark mode */
+.dark {
+  --nsui-border: rgba(255, 255, 255, 0.1);
+  --nsui-bg: #1e293b;
+  --nsui-bg-soft: #0f172a;
+  --nsui-text: #f8fafc;
+  --nsui-text-muted: #94a3b8;
+  --nsui-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+}
+
+.nsui {
+  font-family: var(--nsui-font);
+  color: var(--nsui-text);
+  transition: color 0.3s ease;
+}
+
+.nsui-card {
+  border: 1px solid var(--nsui-border);
+  background: var(--nsui-bg);
+  border-radius: var(--nsui-radius);
+  box-shadow: var(--nsui-shadow);
+  transition: all 0.3s ease;
+}
+
