@@ -1,15 +1,54 @@
+# Dependency Directories
 node_modules
-dist
-.md_dev
-.DS_Store
+**/node_modules
 
-# VitePress
+# Build Outputs
+dist
+**/dist
+build
+**/build
+
+# VitePress specific
 .vitepress/cache
 .vitepress/dist
+**/docs/.vitepress/cache
+**/docs/.vitepress/dist
 
-# Logs
+# Logs and Debugging
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+*.log
+logs
+**/*.log
 
+# Environment Variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE and System Files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.md_dev
+
+# Testing and Coverage
+coverage
+**/coverage
+.nyc_output
+
+# Miscellaneous
+.eslintcache
+.stylelintcache
+.history
+stats.html
+.changeset/*.lock

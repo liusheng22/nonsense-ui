@@ -2,6 +2,7 @@ const path = require("node:path");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     path.join(__dirname, "apps/docs/docs/**/*.{md,vue,ts,js}"),
     path.join(__dirname, "apps/docs/docs/.vitepress/theme/**/*.{ts,js,vue}"),
