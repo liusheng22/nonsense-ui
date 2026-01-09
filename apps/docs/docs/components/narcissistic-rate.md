@@ -1,40 +1,43 @@
----
-title: NsNarcissisticRate 自恋评分 - Nonsense UI
-description: 为极度自信者设计的评分组件。它会自动躲避低分评价，并为每一次高分给予华丽的视觉反馈。
----
-
 # NsNarcissisticRate 自恋评分
 
-一个极其“自恋”的评分组件。它坚信自己是完美的，因此不允许任何低于满分的评价。
+一个极度自恋且控制欲极强的评分组件。它不仅拒绝差评，还会主动“碰瓷”你的鼠标，确保你给出的每一次点击都是满分。
 
 ### 组件特性
-- **高自尊 (egoLevel="high")**：当你想点 1-4 星时，星星会不仅在视觉上强行变成 5 星，还会物理性地躲避你的光标。
-- **自适应文案**：即便你还没点，它也会通过文案不断诱导（洗脑）你给出正确答案。
-- **强制感谢**：无论如何，当你点击后，它都会由衷地感谢你对它的肯定。
+- **主动碰瓷 (Active Interception)**：当你试图点击 1-4 星时，组件会瞬间平移，用第 5 颗星强行接住你的鼠标点击。
+- **强制满分 (Forced Perfection)**：无论你如何尝试，最终的点击事件都会落在满分星上。
+- **自适应文案**：组件右上角状态栏显示 `DISSENT: BLOCKED`（异议：已屏蔽），时刻提醒用户谁才是老大。
+- **强制感谢**：点击后，它会由衷地感谢你（被强迫）的肯定。
 
-<div class="nsui-card" style="margin: 24px 0; display: flex; flex-direction: column; align-items: center; background: #fffbeb; padding: 40px; border-radius: 24px; gap: 24px;">
-  <div style="display:flex; gap: 12px; align-items: center;">
-    <span style="font-weight: bold; color: #92400e;">自恋等级：</span>
-    <button 
-      class="nsui" 
-      style="border:2px solid #f59e0b; border-radius:12px; padding:8px 16px; background:#fff; cursor:pointer; font-weight: bold; color: #d97706;" 
-      @click="ego = ego === 'high' ? 'low' : 'high'"
-    >
-      {{ ego === 'high' ? '🔥 极高 (物理闪避)' : '💬 普通 (仅洗脑)' }}
-    </button>
-  </div>
-
-  <NsNarcissisticRate v-model="score" :ego-level="ego" title="您觉得我的文档写得好吗？" />
+<div class="nsui-demo-container" style="margin: 24px 0; display: flex; flex-direction: column; align-items: center; background: #fffbeb; padding: 40px; border-radius: 24px; gap: 24px;">
+  <NsNarcissisticRate v-model="score" title="您觉得我的文档写得好吗？" />
 </div>
 
-## Props
+### 基础用法
 
-- `fixedScore`: `number`（唯一正确分数，默认 `5`）
-- `egoLevel`: `'low' | 'high'`（自恋程度，默认 `high`）
-- `title`: `string`（评分标题）
+```vue
+<template>
+  <NsNarcissisticRate 
+    v-model="rate"
+    title="给我打个分吧（只要五星）"
+  />
+</template>
 
-## Events
+<script setup>
+import { ref } from 'vue'
+const rate = ref(5)
+</script>
+```
 
-- `change(value, { attempted })`: 点击后触发
-- `ego(level)`: 触发自恋行为时触发
+### API
 
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `v-model` | 绑定值（只能是 5） | `number` | - |
+| `title` | 标题文案 | `string` | "您对我的表现打几分？" |
+| `disabled` | 是否禁用 | `boolean` | `false` |
+
+### Events
+
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `change` | 评分改变时触发（永远是 5） | `(value: number, meta: { attempted: number })` |
