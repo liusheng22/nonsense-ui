@@ -1,4 +1,9 @@
-# NsMismatchedButton
+---
+title: NsMismatchedButton 认知失调按钮 - Nonsense UI
+description: 专门制造肌肉记忆冲突的按钮组。颜色欺骗与位置瞬移的完美结合，让每一次点击都变成一场赌博。
+---
+
+# NsMismatchedButton 认知失调按钮
 
 一个专为欺骗“肌肉记忆”与“视觉直觉”而设计的按钮组。它通过反转颜色逻辑并强制交换位置，让用户在进行“危险操作”时陷入深深的自我怀疑。
 

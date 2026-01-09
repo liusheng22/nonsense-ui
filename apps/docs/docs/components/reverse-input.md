@@ -1,4 +1,9 @@
-# NsReverseInput
+---
+title: NsReverseInput 逻辑反转输入 - Nonsense UI
+description: 一个拒绝顺从的输入框。它会反转你的输入顺序，镜像你的文字显示，甚至拒绝你的光标移动请求。
+---
+
+# NsReverseInput 逻辑反转输入
 
 一个挑战人类读写本能的输入框。它通过逻辑反转与物理镜像，让原本简单的文字录入变成一场思维博弈。
 

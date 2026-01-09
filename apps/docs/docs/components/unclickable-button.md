@@ -1,3 +1,8 @@
+---
+title: NsUnclickableButton 抓不住的按钮 - Nonsense UI
+description: 一个越靠近越躲避的 Vue 3 按钮组件。专为整蛊设计，预判用户的鼠标路径并实时闪避，挑战交互设计的极限。
+---
+
 # NsUnclickableButton 抓不住的按钮
 
 这是一个患有深度“社交距离综合征”的按钮。它讨厌被点击，更讨厌被靠近。

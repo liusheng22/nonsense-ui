@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Nonsense UI - 专门制造“笑点”的 Vue 3 荒诞派组件库
-description: Nonsense UI 是一个基于 Vue 3 的反常规组件库，专注于反人类设计、反直觉交互和极致的幽默感。包含旋转拨盘输入、重力坍塌输入框等创意组件。虽然并不好用，但它真的很有趣。
-keywords: Vue 3 组件库, 反人类设计, Nonsense UI, 幽默设计, 交互艺术, 创意前端, Nonsensical UI, 荒诞交互
+title: Nonsense UI - 毫无用处的 Vue 3 荒诞组件实验室
+description: 专注整蛊与反人类交互的数字化实验。内置抓不住的按钮、复古拨盘等反直觉组件，毫无用户体验可言。
+keywords: Vue 3 组件库, 反人类, 反直觉, 无厘头, 整蛊组件, 实验室, 毫无生产力, 毫无用户体验, Nonsense UI, 交互艺术, 荒诞交互
 
 hero:
   name: "Nonsense UI"
   text: "全宇宙交互效率最低的组件库"
-  tagline: "在一个追求效率与生产力的时代，我们决定反其道而行之。解构 UI/UX，制造令人愉悦的挫败感。"
+  tagline: "在一个追求效率与生产力的时代，我们决定‘反其道而行’。抛弃所谓的用户体验，专注于制造反人类的交互障碍。"
   actions:
     - theme: brand
       text: 立即受挫
@@ -15,13 +15,13 @@ hero:
 
 features:
   - title: "极致挫败"
-    details: "每一处交互都经过精心设计，确保用户在点击时产生怀疑。反直觉、反人类，就是我们的准则。"
+    details: "每一处交互都经过反直觉设计，确保用户在点击时产生怀疑。反人类、反直觉，就是我们的准则。"
     icon: 😩
   - title: "严谨乱来"
-    details: "虽然交互很荒诞，但代码很严肃。全量 TypeScript 支持，工程化发布流程，它是艺术，也是严谨的库。"
+    details: "交互很荒诞，但代码很严肃。全量 TS 支持，工程化发布，一场认真的数字化整蛊实验。"
     icon: 🛡️
-  - title: "情绪价值"
-    details: "枯燥的业务代码中需要一点调味剂。Nonsense UI 不解决问题，它只负责让你在开发过程中笑出声。"
+  - title: "毫无用处"
+    details: "这里没有任何能提升生产力的工具。Nonsense UI 只负责记录那些违背直觉的荒谬瞬间。"
     icon: 🤡
 
 ---

@@ -1,4 +1,9 @@
-# NsRotaryDial
+---
+title: NsRotaryDial 复古拨盘输入 - Nonsense UI
+description: 一个挑战耐心极限的复古旋转拨盘输入组件。将简单的数字录入变成一项“体力活”，重现老式电话的低效魅力。
+---
+
+# NsRotaryDial 复古拨盘输入
 
 一个复古风格的拨盘输入器。
 

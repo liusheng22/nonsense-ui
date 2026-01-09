@@ -1,4 +1,9 @@
-# NsGravityInput
+---
+title: NsGravityInput 重力崩塌输入框 - Nonsense UI
+description: 文字不再受输入框束缚，输入即坠落。利用物理引擎模拟的输入体验，支持通过晃动重新排列字符。
+---
+
+# NsGravityInput 重力崩塌输入框
 
 看起来是一个普通的输入框，但输入的文字受到**重力引擎**的严格控制。
 

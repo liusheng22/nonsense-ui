@@ -1,4 +1,9 @@
-# NsContradictingCheckbox
+---
+title: NsContradictingCheckbox 自我怀疑勾选框 - Nonsense UI
+description: 一个拥有“自由意志”的勾选框。它会拒绝你的同意，质疑你的决定，并用各种借口逃避被选中的命运。
+---
+
+# NsContradictingCheckbox 自我怀疑勾选框
 
 一个具有自我意识和高度主见的复选框。它不仅仅是反向逻辑，它会主动通过“视觉欺骗”和“文案博弈”来挑战你的决定。
 

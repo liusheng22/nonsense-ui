@@ -1,4 +1,9 @@
-# NsNarcissisticRate
+---
+title: NsNarcissisticRate 自恋评分 - Nonsense UI
+description: 为极度自信者设计的评分组件。它会自动躲避低分评价，并为每一次高分给予华丽的视觉反馈。
+---
+
+# NsNarcissisticRate 自恋评分
 
 一个极其“自恋”的评分组件。它坚信自己是完美的，因此不允许任何低于满分的评价。
 
