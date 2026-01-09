@@ -1,6 +1,6 @@
 {
   "name": "nonsense-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "一个毫无用处、专门折磨用户的 Vue 3 荒诞组件实验室。内置一系列反人类、反直觉的整蛊交互。",
   "keywords": [
     "vue",
@@ -9,7 +9,9 @@
     "整蛊",
     "反人类",
     "无厘头",
-    "反直觉"
+    "反直觉",
+    "毫无体验",
+    "实验室"
   ],
   "homepage": "https://nonsense-ui.lius.me/",
   "bugs": {
