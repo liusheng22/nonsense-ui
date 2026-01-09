@@ -1,16 +1,16 @@
 ---
 layout: home
-title: Nonsense UI - 毫无用处的 Vue 3 荒诞组件实验室
-description: 专注整蛊与反人类交互的数字化实验。内置抓不住的按钮、复古拨盘等反直觉组件，毫无用户体验可言。
-keywords: Vue 3 组件库, 反人类, 反直觉, 无厘头, 整蛊组件, 实验室, 毫无生产力, 毫无用户体验, Nonsense UI, 交互艺术, 荒诞交互
+title: Nonsense UI - 制造交互障碍的 Vue 3 荒诞组件实验室
+description: 专注于制造交互障碍的 Vue 3 整蛊组件库。拒绝用户体验，挑战直觉极限，提供反人类、反直觉的荒诞交互。
+keywords: Vue3, 整蛊组件, 反人类, 反直觉, 荒诞交互, 制造障碍, 拒绝体验, 血压升高, 无厘头, Nonsense UI
 
 hero:
   name: "Nonsense UI"
-  text: "全宇宙交互效率最低的组件库"
-  tagline: "在一个追求效率与生产力的时代，我们决定‘反其道而行’。抛弃所谓的用户体验，专注于制造反人类的交互障碍。"
+  text: "制造交互障碍的 Vue 3 荒诞组件实验室"
+  tagline: "专注于制造交互障碍的 Vue 3 整蛊组件库。拒绝用户体验，挑战直觉极限，提供反人类、反直觉的荒诞交互"
   actions:
     - theme: brand
-      text: 立即受挫
+      text: 立即领虐
       link: /components/
 
 features:
@@ -28,8 +28,8 @@ features:
 
 <div class="home-prank-container" style="margin-top: 64px; display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px; background: var(--vp-c-bg-soft); border-radius: 32px; border: 1px solid var(--vp-c-gutter);">
   <div style="text-align: center;">
-    <h3 style="font-weight: 900; font-size: 24px; margin-bottom: 8px;">🎁 进店礼包</h3>
-    <p style="font-size: 14px; opacity: 0.6;">点击下方按钮领取你的“首位访客”专属勋章</p>
+    <h3 style="font-weight: 900; font-size: 24px; margin-bottom: 8px;">🎁 新用户礼包</h3>
+    <p style="font-size: 14px; opacity: 0.6;">点击下方按钮领取你的“新用户”专属勋章</p>
   </div>
   
   <NsUnclickableButton 
