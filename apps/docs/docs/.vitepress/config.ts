@@ -4,8 +4,24 @@ import { fileURLToPath } from "node:url";
 export default defineConfig({
   lang: "zh-CN",
   title: "Nonsense UI",
-  description: "一个专门制造“笑点”的 Vue 3 组件库，专注反人类设计与极致荒诞交互。",
+  description: "一个毫无用处、专门折磨用户的 Vue 3 荒诞组件实验室。内置一系列反人类、反直觉的整蛊交互。",
   base: process.env.VITEPRESS_BASE ?? "/",
+  lastUpdated: true,
+  cleanUrls: true,
+  sitemap: {
+    hostname: "https://nonsense-ui.lius.me"
+  },
+  head: [
+    ["meta", { name: "viewport", content: "width=device-width, initial-scale=1" }],
+    ["meta", { name: "author", content: "liusheng22" }],
+    ["meta", { property: "og:type", content: "website" }],
+    ["meta", { property: "og:title", content: "Nonsense UI - 毫无用处、专门折磨用户的 Vue 3 荒诞组件实验室" }],
+    ["meta", { property: "og:description", content: "抛弃所谓的用户体验，专注于制造反人类的交互障碍。这里只有无厘头的折磨，没有生产力工具。" }],
+    ["meta", { property: "og:url", content: "https://nonsense-ui.lius.me" }],
+    ["meta", { name: "twitter:card", content: "summary_large_image" }],
+    ["link", { rel: "icon", href: "/favicon.ico?v=1" }],
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg?v=1" }]
+  ],
   vite: {
     resolve: {
       alias: [
@@ -30,6 +46,8 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    logo: "/logo.svg?v=1",
+    siteTitle: "Nonsense UI",
     nav: [
       { text: "指南", link: "/guide/getting-started" },
       { text: "组件", link: "/components/" }
@@ -71,7 +89,10 @@ export default defineConfig({
         }
       ]
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/liusheng22/nonsense-ui" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/liusheng22/nonsense-ui" },
+      { icon: 'npm', link: 'https://npmjs.com/package/nonsense-ui' }
+    ],
     footer: {
       message: "Built with VitePress",
       copyright: "MIT Licensed"
