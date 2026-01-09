@@ -86,6 +86,12 @@ export default defineConfig({
             { text: "NsNarcissisticRate", link: "/components/narcissistic-rate" },
             { text: "NsContradictingCheckbox", link: "/components/contradicting-checkbox" }
           ]
+        },
+        {
+          text: "关于实验室",
+          items: [
+            { text: "贡献坏点子", link: "https://github.com/liusheng22/nonsense-ui/issues" }
+          ]
         }
       ]
     },
