@@ -12,7 +12,7 @@ description: 专门制造肌肉记忆冲突的按钮组。颜色欺骗与位置�
 - **物理逃逸**：当你犹豫不决地将鼠标滑向任何按钮时，它们会瞬间交换位置，让你永远无法准确点中目标。
 
 <div class="nsui-card" style="margin: 24px 0; display: flex; flex-direction: column; align-items: center; background: #f1f5f9; padding: 40px; border-radius: 24px; gap: 24px;">
-  <NsMismatchedButton 
+  <NsMismatchedButton
     title="隐私权限请求" 
     subtitle="“Nonsensical UI” 申请访问您的麦克风、摄像头、地理位置、银行卡密码以及您的所有童年回忆。" 
     left-text="全部允许并公开" 

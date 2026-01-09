@@ -5,9 +5,9 @@
   <img src="https://img.shields.io/npm/l/nonsense-ui?color=emerald&style=flat-square" alt="license">
 </p>
 
-> **全宇宙交互效率最低的组件库。** 专注整蛊与反人类交互的数字化实验，重构你对 UI 组件的认知。
+> **专注于制造交互障碍的 Vue 3 整蛊组件库。** 拒绝用户体验，挑战直觉极限，提供反人类、反直觉的荒诞交互。
 
-## 📖 官方文档 (立即受挫)
+## 📖 官方文档 (立即领虐)
 **[https://nonsense-ui.lius.me/](https://nonsense-ui.lius.me/)**
 
 ## ✨ 实验室特性
@@ -37,5 +37,4 @@ app.mount('#app')
 我们正在收集更多让用户血压升高的组件。如果你有任何“天才”般的点子，欢迎在 [GitHub Issues](https://github.com/liusheng22/nonsense-ui/issues) 留言或提交 PR。
 
 ## ⚠️ 免责声明
-本项目纯属整蛊，请勿在任何严肃的生产环境中使用，除非你想听到用户的尖叫。
-
+本项目纯属整蛊，请勿在任何严肃的生产环境中使用。

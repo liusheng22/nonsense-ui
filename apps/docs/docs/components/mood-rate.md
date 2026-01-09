@@ -5,10 +5,14 @@ description: 世界上最“客观”的评价组件。它通过逻辑修正，�
 
 # NsMoodRate 情绪强制评分
 
-三档情绪评分（差 / 良好 / 很好 + emoji）。  
-整蛊点：当你把鼠标放到“差/良好”上，它们会立刻“升级”为 **很好**，让你最终只能点到很好。点击后会弹出感谢（阴阳怪气）页面。
+这是一个绝对“正能量”的评价组件。它通过物理级逻辑修正，确保用户在任何情绪状态下都能给出最真实的——**“很好”**。
 
-<div class="nsui-card" style="margin: 24px 0; display: flex; justify-content: center; background: #f8fafc; padding: 40px; border-radius: 24px;">
+### 🤡 它的工作机制
+- **拒绝差评**：当用户试图将鼠标移向“差”或“良好”时，它们会自动且迅速地“改邪归正”，强制升级为“很好”。
+- **强制积极**：它不仅仅是一个评分器，它是一个情绪矫正器。
+- **强制回馈**：点击后将弹出一个充满（阴阳怪气）诚意的全屏感谢，庆祝你们达成了共识。
+
+<div class="nsui-demo-container" style="margin: 32px 0; display: flex; justify-content: center; padding: 40px; border-radius: 32px; background: var(--vp-c-bg-soft);">
   <NsMoodRate />
 </div>
 
