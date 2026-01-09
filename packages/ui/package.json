@@ -1,15 +1,15 @@
 {
   "name": "nonsense-ui",
   "version": "1.0.1",
-  "description": "全宇宙交互效率最低的组件库。一个专门制造障碍体验的 Vue 3 组件库，专注反人类设计与极致荒诞交互。",
+  "description": "一个毫无用处、专门折磨用户的 Vue 3 荒诞组件实验室。内置一系列反人类、反直觉的整蛊交互。",
   "keywords": [
     "vue",
     "vue3",
-    "component-library",
     "nonsense-ui",
-    "anti-human-design",
-    "humor",
-    "ui-kit"
+    "整蛊",
+    "反人类",
+    "无厘头",
+    "反直觉"
   ],
   "homepage": "https://nonsense-ui.lius.me/",
   "bugs": {
@@ -22,7 +22,9 @@
   "license": "MIT",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.js",
