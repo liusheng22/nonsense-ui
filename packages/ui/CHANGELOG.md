@@ -1,5 +1,11 @@
 # nonsense-ui
 
+## 1.0.3
+
+### Patch Changes
+
+- cb8c709: update seo & components ui
+
 ## 1.0.2
 
 ### Patch Changes
