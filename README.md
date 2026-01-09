@@ -1,8 +1,19 @@
 # Nonsense UI (Vue 3)
 
+<p align="center">
+  <img src="https://img.shields.io/npm/v/nonsense-ui?color=emerald&style=flat-square" alt="npm version">
+  <img src="https://img.shields.io/npm/l/nonsense-ui?color=emerald&style=flat-square" alt="license">
+</p>
+
 **制造交互障碍的 Vue 3 荒诞组件实验室**
 
-专注于制造交互障碍的 Vue 3 整蛊组件库。拒绝用户体验，挑战直觉极限，提供反人类、反直觉的荒诞交互
+专注于制造交互障碍的 Vue 3 整蛊组件库。拒绝用户体验，挑战直觉极限，提供反人类、反直觉的荒诞交互。
+
+## 📖 官方文档
+[进入实验室 (立即领虐) ➔](https://nonsense-ui.lius.me/)
+
+## 📦 NPM 地址
+[查看 NPM 包详情 ➔](https://www.npmjs.com/package/nonsense-ui)
 
 ## ✨ 特性
 - **极致挫败**：每一处交互都经过反直觉设计，确保用户在点击时产生怀疑。反人类、反直觉，就是我们的准则。
