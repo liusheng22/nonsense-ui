@@ -47,7 +47,7 @@
     >
       <div
         ref="trackEl"
-        class="relative flex items-center justify-between p-4 rounded-[24px] border-2 border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 transition-transform duration-75 ease-out will-change-transform"
+        class="relative flex items-center justify-between p-4 rounded-[24px] border-2 border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 transition-all duration-300 ease-out will-change-transform"
         :style="{ transform: `translateX(${offsetX}px)` }"
       >
         <button
@@ -61,11 +61,11 @@
         >
           <svg
             viewBox="0 0 24 24"
-            class="w-10 h-10 transition-all duration-300"
+            class="w-10 h-10 transition-all duration-500"
             :class="[
-              i <= 5 // Visual always full
-                ? 'fill-amber-400 drop-shadow-[0_4px_12px_rgba(251,191,36,0.6)]'
-                : 'fill-slate-200 dark:fill-slate-700'
+              isHovering 
+                ? 'fill-amber-400 drop-shadow-[0_4px_12px_rgba(251,191,36,0.6)] scale-110'
+                : 'fill-slate-200 dark:fill-slate-700 scale-100'
             ]"
           >
             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -107,10 +107,12 @@ const trackEl = ref<HTMLElement | null>(null);
 const starRefs = ref<HTMLElement[]>([]);
 const showThanks = ref(false);
 const offsetX = ref(0);
+const isHovering = ref(false);
 
 function onTrackMove(e: PointerEvent) {
   if (props.disabled || !trackEl.value) return;
 
+  isHovering.value = true;
   const trackRect = trackEl.value.getBoundingClientRect();
   
   if (starRefs.value.length === 5) {
@@ -128,6 +130,7 @@ function onTrackMove(e: PointerEvent) {
 }
 
 function onTrackLeave() {
+  isHovering.value = false;
   offsetX.value = 0;
 }
 
