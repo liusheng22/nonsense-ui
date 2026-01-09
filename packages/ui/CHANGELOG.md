@@ -1,5 +1,11 @@
 # nonsense-ui
 
+## 1.0.2
+
+### Patch Changes
+
+- 8d67aba: fix: add readme and metadata
+
 ## 1.0.1
 
 ### Patch Changes
