@@ -9,6 +9,6 @@ export { NsReverseInput } from "./components/NsReverseInput";
 export { NsContradictingCheckbox } from "./components/NsContradictingCheckbox";
 export { NsNarcissisticRate } from "./components/NsNarcissisticRate";
 export { NsMismatchedButton } from "./components/NsMismatchedButton";
-export { NsMoodRate } from "./components/NsMoodRate";
+export { NsSatisfactionRate } from "./components/NsSatisfactionRate";
 export { NsRotaryDial } from "./components/NsRotaryDial";
 export { NsGravityInput } from "./components/NsGravityInput";

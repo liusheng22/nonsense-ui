@@ -54,11 +54,11 @@ description: 欢迎来到 Nonsense UI 实验室。这里汇集了专注于制造
     </div>
   </a>
 
-  <a href="/components/mood-rate" class="ns-component-card">
+  <a href="/components/satisfaction-rate" class="ns-component-card">
     <div class="card-content">
       <div class="card-icon">💖</div>
-      <h4>强买强卖评分</h4>
-      <p>我们非常在乎您的意见，只要您的意见是“很好”。</p>
+      <h4>满意度校准评价</h4>
+      <p>每一个评价都是经过精准校准的。无论您想表达什么，最终都会变成赞美。</p>
       <div class="frustration-level">挫败感：🤡🤡</div>
     </div>
   </a>

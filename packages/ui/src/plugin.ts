@@ -1,7 +1,7 @@
 import type { App, Plugin } from "vue";
 import { NsContradictingCheckbox } from "./components/NsContradictingCheckbox";
 import { NsGravityInput } from "./components/NsGravityInput";
-import { NsMoodRate } from "./components/NsMoodRate";
+import { NsSatisfactionRate } from "./components/NsSatisfactionRate";
 import { NsMismatchedButton } from "./components/NsMismatchedButton";
 import { NsNarcissisticRate } from "./components/NsNarcissisticRate";
 import { NsReverseInput } from "./components/NsReverseInput";
@@ -12,7 +12,7 @@ const components = [
   NsUnclickableButton,
   NsReverseInput,
   NsContradictingCheckbox,
-  NsMoodRate,
+  NsSatisfactionRate,
   NsNarcissisticRate,
   NsMismatchedButton,
   NsRotaryDial,

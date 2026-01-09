@@ -82,7 +82,7 @@ export default defineConfig({
         {
           text: "虚伪反馈 Feedback",
           items: [
-            { text: "NsMoodRate", link: "/components/mood-rate" },
+            { text: "NsSatisfactionRate", link: "/components/satisfaction-rate" },
             { text: "NsNarcissisticRate", link: "/components/narcissistic-rate" },
             { text: "NsContradictingCheckbox", link: "/components/contradicting-checkbox" }
           ]
