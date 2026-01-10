@@ -1,7 +1,7 @@
 {
   "name": "nonsense-ui-monorepo",
   "private": true,
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.4.1",
   "scripts": {
     "dev:docs": "pnpm -C apps/docs dev",
     "build": "pnpm -r build",

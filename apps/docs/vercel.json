@@ -1,6 +1,6 @@
 {
-  "installCommand": "cd ../.. && pnpm install",
-  "buildCommand": "cd ../.. && pnpm --filter nonsense-ui build && pnpm --filter nonsense-ui-docs build",
+  "installCommand": "cd ../.. && pnpm --reporter=append-only install",
+  "buildCommand": "cd ../.. && pnpm --reporter=append-only --filter nonsense-ui build && pnpm --reporter=append-only --filter nonsense-ui-docs build",
   "outputDirectory": "docs/.vitepress/dist",
   "framework": "vitepress"
 }
