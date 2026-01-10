@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm build",
+  "buildCommand": "pnpm --filter nonsense-ui build && pnpm --filter nonsense-ui-docs build",
   "outputDirectory": "apps/docs/docs/.vitepress/dist",
   "installCommand": "pnpm install",
   "framework": null,
