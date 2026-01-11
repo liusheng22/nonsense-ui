@@ -12,3 +12,4 @@ export { NsMismatchedButton } from "./components/NsMismatchedButton";
 export { NsSatisfactionRate } from "./components/NsSatisfactionRate";
 export { NsRotaryDial } from "./components/NsRotaryDial";
 export { NsGravityInput } from "./components/NsGravityInput";
+export { NsCaptchaMaze } from "./components/NsCaptchaMaze";

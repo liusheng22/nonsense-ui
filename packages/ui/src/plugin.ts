@@ -7,6 +7,7 @@ import { NsNarcissisticRate } from "./components/NsNarcissisticRate";
 import { NsReverseInput } from "./components/NsReverseInput";
 import { NsRotaryDial } from "./components/NsRotaryDial";
 import { NsUnclickableButton } from "./components/NsUnclickableButton";
+import { NsCaptchaMaze } from "./components/NsCaptchaMaze";
 
 const components = [
   NsUnclickableButton,
@@ -16,7 +17,8 @@ const components = [
   NsNarcissisticRate,
   NsMismatchedButton,
   NsRotaryDial,
-  NsGravityInput
+  NsGravityInput,
+  NsCaptchaMaze
 ];
 
 export const NonsenseUI: Plugin = {
