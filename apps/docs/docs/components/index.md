@@ -81,6 +81,15 @@ description: 欢迎来到 Nonsense UI 实验室。这里汇集了专注于制造
     </div>
   </a>
 
+  <a href="/components/captcha-maze" class="ns-component-card">
+    <div class="card-content">
+      <div class="card-icon">🧩</div>
+      <h4>迷宫验证码</h4>
+      <p>证明你不是机器人？请先像外科医生一样通过这个迷宫。</p>
+      <div class="frustration-level">挫败感：🤡🤡🤡🤡</div>
+    </div>
+  </a>
+
 </div>
 
 <style>
