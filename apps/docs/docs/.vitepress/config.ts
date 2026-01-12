@@ -3,23 +3,34 @@ import { fileURLToPath } from "node:url";
 
 // 动态获取 hostname，支持多个部署域名
 function getHostname(): string {
-  // 优先使用环境变量 SITE_URL（可在各平台配置）
+  // ⚠️ 必须设置 SITE_URL 环境变量，否则 sitemap 会使用错误的域名
+  // Vercel: 设置 SITE_URL=https://nonsense-ui.vercel.app
+  // Cloudflare: 设置 SITE_URL=https://nonsense-ui.lius.me
   if (process.env.SITE_URL) {
     return process.env.SITE_URL;
   }
-  // Vercel 部署时使用 VERCEL_URL（自动提供）
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`;
+  
+  // 如果没有设置 SITE_URL，根据部署平台使用默认域名
+  // Vercel 部署
+  if (process.env.VERCEL) {
+    // 即使有 VERCEL_URL，也不使用（可能是预览 URL）
+    // 强制要求设置 SITE_URL
+    console.warn('[VitePress] ⚠️ 警告: 未设置 SITE_URL，sitemap 将使用默认域名。请在 Vercel 项目设置中配置 SITE_URL=https://nonsense-ui.vercel.app');
+    return "https://nonsense-ui.vercel.app";
   }
-  // Cloudflare Pages 部署时使用 CF_PAGES_URL（自动提供）
-  if (process.env.CF_PAGES_URL) {
-    return `https://${process.env.CF_PAGES_URL}`;
+  
+  // Cloudflare Pages 部署
+  if (process.env.CF_PAGES) {
+    console.warn('[VitePress] ⚠️ 警告: 未设置 SITE_URL，sitemap 将使用默认域名。请在 Cloudflare Pages 项目设置中配置 SITE_URL=https://nonsense-ui.lius.me');
+    return "https://nonsense-ui.lius.me";
   }
-  // 默认使用 Vercel 域名（搜索权重更高）
+  
+  // 本地开发或其他环境
   return "https://nonsense-ui.vercel.app";
 }
 
 const siteUrl = getHostname();
+const GA_ID = process.env.GA_MEASUREMENT_ID;
 
 export default defineConfig({
   lang: "zh-CN",
@@ -40,7 +51,31 @@ export default defineConfig({
     ["meta", { property: "og:url", content: siteUrl }],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
     ["link", { rel: "icon", href: "/favicon.ico?v=1" }],
-    ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg?v=1" }]
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg?v=1" }],
+    // Google Analytics (GA4)，仅在配置了 GA_MEASUREMENT_ID 时注入
+    ...(GA_ID
+      ? ([
+          [
+            "script",
+            {
+              async: "true",
+              src: `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
+            }
+          ],
+          [
+            "script",
+            {},
+            `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}', {
+  cookie_flags: 'SameSite=None;Secure'
+});
+`.trim()
+          ]
+        ] as any)
+      : [])
   ],
   vite: {
     resolve: {
