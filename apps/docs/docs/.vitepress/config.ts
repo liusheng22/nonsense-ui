@@ -1,6 +1,26 @@
 import { defineConfig } from "vitepress";
 import { fileURLToPath } from "node:url";
 
+// 动态获取 hostname，支持多个部署域名
+function getHostname(): string {
+  // 优先使用环境变量 SITE_URL（可在各平台配置）
+  if (process.env.SITE_URL) {
+    return process.env.SITE_URL;
+  }
+  // Vercel 部署时使用 VERCEL_URL（自动提供）
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  // Cloudflare Pages 部署时使用 CF_PAGES_URL（自动提供）
+  if (process.env.CF_PAGES_URL) {
+    return `https://${process.env.CF_PAGES_URL}`;
+  }
+  // 默认使用 Vercel 域名（搜索权重更高）
+  return "https://nonsense-ui.vercel.app";
+}
+
+const siteUrl = getHostname();
+
 export default defineConfig({
   lang: "zh-CN",
   title: "Nonsense UI",
@@ -9,7 +29,7 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   sitemap: {
-    hostname: "https://nonsense-ui.lius.me"
+    hostname: siteUrl
   },
   head: [
     ["meta", { name: "viewport", content: "width=device-width, initial-scale=1" }],
@@ -17,7 +37,7 @@ export default defineConfig({
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:title", content: "Nonsense UI - 制造交互障碍的 Vue 3 荒诞组件实验室" }],
     ["meta", { property: "og:description", content: "专注于制造交互障碍的 Vue 3 整蛊组件库。拒绝用户体验，挑战直觉极限，提供反人类、反直觉的荒诞交互。" }],
-    ["meta", { property: "og:url", content: "https://nonsense-ui.lius.me" }],
+    ["meta", { property: "og:url", content: siteUrl }],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
     ["link", { rel: "icon", href: "/favicon.ico?v=1" }],
     ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg?v=1" }]
@@ -85,6 +105,12 @@ export default defineConfig({
             { text: "NsSatisfactionRate", link: "/components/satisfaction-rate" },
             { text: "NsNarcissisticRate", link: "/components/narcissistic-rate" },
             { text: "NsContradictingCheckbox", link: "/components/contradicting-checkbox" }
+          ]
+        },
+        {
+          text: "混沌验证 Captcha",
+          items: [
+            { text: "NsCaptchaMaze", link: "/components/captcha-maze" }
           ]
         },
         {
