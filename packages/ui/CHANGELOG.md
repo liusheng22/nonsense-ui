@@ -1,5 +1,11 @@
 # nonsense-ui
 
+## 1.0.4
+
+### Patch Changes
+
+- 0d773b5: feat: add captcha-maze component
+
 ## 1.0.3
 
 ### Patch Changes
