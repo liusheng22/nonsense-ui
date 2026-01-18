@@ -122,38 +122,38 @@ gtag('config', '${GA_ID}', {
         {
           text: "基础欺诈 Buttons",
           items: [
-            { text: "NsUnclickableButton", link: "/components/unclickable-button" },
-            { text: "NsMismatchedButton", link: "/components/mismatched-button" }
+            { text: "点不到按钮", link: "/components/unclickable-button" },
+            { text: "错位按钮", link: "/components/mismatched-button" }
           ]
         },
         {
           text: "输入折磨 Inputs",
           items: [
-            { text: "NsRotaryDial", link: "/components/rotary-dial" },
-            { text: "NsGravityInput", link: "/components/gravity-input" },
-            { text: "NsReverseInput", link: "/components/reverse-input" }
+            { text: "旋钮输入", link: "/components/rotary-dial" },
+            { text: "重力输入", link: "/components/gravity-input" },
+            { text: "反向输入", link: "/components/reverse-input" }
           ]
         },
         {
           text: "虚伪反馈 Feedback",
           items: [
-            { text: "NsSatisfactionRate", link: "/components/satisfaction-rate" },
-            { text: "NsNarcissisticRate", link: "/components/narcissistic-rate" },
-            { text: "NsContradictingCheckbox", link: "/components/contradicting-checkbox" }
+            { text: "满意度评分", link: "/components/satisfaction-rate" },
+            { text: "自恋评分", link: "/components/narcissistic-rate" },
+            { text: "自相矛盾复选框", link: "/components/contradicting-checkbox" }
           ]
         },
         {
           text: "混沌验证 Captcha",
           items: [
-            { text: "NsCaptchaMaze", link: "/components/captcha-maze" }
+            { text: "迷宫验证码", link: "/components/captcha-maze" }
           ]
         },
         {
           text: "弹窗 Modal",
           items: [
-            { text: "NsUnclickableConfirmModal", link: "/components/unclickable-confirm-modal" },
-            { text: "NsUncatchableModal", link: "/components/uncatchable-modal" },
-            { text: "NsRebirthModal", link: "/components/rebirth-modal" }
+            { text: "点不到关闭弹窗", link: "/components/unclickable-confirm-modal" },
+            { text: "追不到弹窗", link: "/components/uncatchable-modal" },
+            { text: "复活弹窗", link: "/components/rebirth-modal" }
           ]
         },
         {
