@@ -13,3 +13,6 @@ export { NsSatisfactionRate } from "./components/NsSatisfactionRate";
 export { NsRotaryDial } from "./components/NsRotaryDial";
 export { NsGravityInput } from "./components/NsGravityInput";
 export { NsCaptchaMaze } from "./components/NsCaptchaMaze";
+export { NsUnclickableConfirmModal } from "./components/NsUnclickableConfirmModal";
+export { NsUncatchableModal } from "./components/NsUncatchableModal";
+export { NsRebirthModal } from "./components/NsRebirthModal";

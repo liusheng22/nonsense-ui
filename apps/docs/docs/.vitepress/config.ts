@@ -149,6 +149,14 @@ gtag('config', '${GA_ID}', {
           ]
         },
         {
+          text: "弹窗 Modal",
+          items: [
+            { text: "NsUnclickableConfirmModal", link: "/components/unclickable-confirm-modal" },
+            { text: "NsUncatchableModal", link: "/components/uncatchable-modal" },
+            { text: "NsRebirthModal", link: "/components/rebirth-modal" }
+          ]
+        },
+        {
           text: "关于实验室",
           items: [
             { text: "贡献坏点子", link: "https://github.com/liusheng22/nonsense-ui/issues" }
@@ -166,4 +174,3 @@ gtag('config', '${GA_ID}', {
     }
   }
 });
-

@@ -90,6 +90,33 @@ description: 欢迎来到 Nonsense UI 实验室。这里汇集了专注于制造
     </div>
   </a>
 
+  <a href="/components/unclickable-confirm-modal" class="ns-component-card">
+    <div class="card-content">
+      <div class="card-icon">🏃</div>
+      <h4>点不到关闭弹窗</h4>
+      <p>“确认关闭”会逃跑。想点到它？先学会围堵。</p>
+      <div class="frustration-level">挫败感：🤡🤡🤡🤡</div>
+    </div>
+  </a>
+
+  <a href="/components/uncatchable-modal" class="ns-component-card">
+    <div class="card-content">
+      <div class="card-icon">🌀</div>
+      <h4>追不到弹窗</h4>
+      <p>它会瞬移闪躲，越追越不在。</p>
+      <div class="frustration-level">挫败感：🤡🤡🤡</div>
+    </div>
+  </a>
+
+  <a href="/components/rebirth-modal" class="ns-component-card">
+    <div class="card-content">
+      <div class="card-icon">♻️</div>
+      <h4>重生弹窗</h4>
+      <p>关掉只是假象，它会更嚣张地复活。</p>
+      <div class="frustration-level">挫败感：🤡🤡🤡🤡🤡</div>
+    </div>
+  </a>
+
 </div>
 
 <style>

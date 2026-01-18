@@ -8,6 +8,9 @@ import { NsReverseInput } from "./components/NsReverseInput";
 import { NsRotaryDial } from "./components/NsRotaryDial";
 import { NsUnclickableButton } from "./components/NsUnclickableButton";
 import { NsCaptchaMaze } from "./components/NsCaptchaMaze";
+import { NsUnclickableConfirmModal } from "./components/NsUnclickableConfirmModal";
+import { NsUncatchableModal } from "./components/NsUncatchableModal";
+import { NsRebirthModal } from "./components/NsRebirthModal";
 
 const components = [
   NsUnclickableButton,
@@ -18,7 +21,10 @@ const components = [
   NsMismatchedButton,
   NsRotaryDial,
   NsGravityInput,
-  NsCaptchaMaze
+  NsCaptchaMaze,
+  NsUnclickableConfirmModal,
+  NsUncatchableModal,
+  NsRebirthModal
 ];
 
 export const NonsenseUI: Plugin = {
